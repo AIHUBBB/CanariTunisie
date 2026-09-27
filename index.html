@@ -6,12 +6,12 @@
 
   <title>CanariTunisie 🐦 | Vente de Canaris en Tunisie</title>
 
-  <meta name="description" content="CanariTunisie - Vente de canaris en Tunisie : Agate Mosaïque Rouge, Mosaïque Rouge, Arlequin et Casquée Blanc. Contactez-nous sur WhatsApp.">
-  <meta name="keywords" content="canari Tunisie, vente canari Tunisie, canaris Tunisie, Agate Mosaïque Rouge, Mosaïque Rouge, Arlequin, Casquée Blanc">
+  <meta name="description" content="CanariTunisie - Vente de canaris en Tunisie : Agate Mosaïque Rouge, Mosaïque Rouge, Arlequin et Casquée Blanc.">
+  <meta name="keywords" content="canari Tunisie, canaris Tunisie, vente canari Tunisie, Agate Mosaïque Rouge, Mosaïque Rouge, Arlequin, Casquée Blanc">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0b0b0b">
 
-  <link rel="canonical" href="https://TON-SITE-ICI.com/">
+  <link rel="canonical" href="https://aihubbb.github.io/CanariTunisie/">
   <link rel="icon" href="favicon.svg">
 
   <style>
@@ -33,7 +33,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(8,10,9,0.95);
+      background: rgba(8,10,9,.96);
       border-bottom: 1px solid #292d29;
       backdrop-filter: blur(10px);
     }
@@ -58,7 +58,7 @@
     nav a {
       color: #ddd;
       text-decoration: none;
-      margin-left: 20px;
+      margin-left: 18px;
       font-size: 14px;
     }
 
@@ -67,14 +67,14 @@
     }
 
     .hero {
-      min-height: 75vh;
+      min-height: 78vh;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       padding: 80px 20px;
       background:
-        radial-gradient(circle at top, #283126 0%, #0b0d0c 45%, #080a09 100%);
+        radial-gradient(circle at top, #354133 0%, #0b0d0c 45%, #080a09 100%);
     }
 
     .hero-content {
@@ -92,7 +92,7 @@
     }
 
     .hero p {
-      color: #bfc3bd;
+      color: #c1c5bf;
       font-size: 18px;
       max-width: 650px;
       margin: 0 auto 30px;
@@ -104,7 +104,7 @@
       border-radius: 10px;
       text-decoration: none;
       font-weight: bold;
-      transition: 0.2s;
+      transition: .2s;
     }
 
     .btn-gold {
@@ -168,7 +168,7 @@
       border: 1px solid #292d29;
       border-radius: 18px;
       overflow: hidden;
-      transition: 0.25s;
+      transition: .25s;
     }
 
     .card:hover {
@@ -182,8 +182,7 @@
       justify-content: center;
       align-items: center;
       font-size: 80px;
-      background:
-        radial-gradient(circle at center, #384438 0%, #141914 70%);
+      background: radial-gradient(circle, #3c4939 0%, #141914 70%);
     }
 
     .card-content {
@@ -191,7 +190,6 @@
     }
 
     .card h3 {
-      color: #fff;
       margin-bottom: 10px;
     }
 
@@ -212,13 +210,15 @@
       text-align: center;
     }
 
-    .info-grid {
+    .info-grid,
+    .steps {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
 
-    .info-box {
+    .info-box,
+    .step {
       background: #111411;
       border: 1px solid #292d29;
       border-radius: 16px;
@@ -230,21 +230,12 @@
       margin-bottom: 12px;
     }
 
-    .info-box p {
+    .info-box p,
+    .step p {
       color: #b4b8b3;
     }
 
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
     .step {
-      background: #111411;
-      border: 1px solid #292d29;
-      border-radius: 16px;
-      padding: 30px;
       text-align: center;
     }
 
@@ -314,8 +305,8 @@
       justify-content: center;
       text-decoration: none;
       font-size: 28px;
-      box-shadow: 0 5px 20px rgba(0,0,0,.4);
       z-index: 2000;
+      box-shadow: 0 5px 20px rgba(0,0,0,.4);
     }
 
     @media (max-width: 900px) {
@@ -340,10 +331,6 @@
 
       .products {
         grid-template-columns: 1fr;
-      }
-
-      .hero {
-        min-height: 65vh;
       }
     }
   </style>
@@ -372,8 +359,8 @@
       <h1>Canaris <span>de qualité</span> en Tunisie 🐦</h1>
 
       <p>
-        Découvrez notre sélection de canaris et contactez-nous directement
-        pour connaître les disponibilités et les prix.
+        Découvrez notre sélection de canaris en Tunisie.
+        Contactez-nous directement pour les disponibilités et les prix.
       </p>
 
       <a class="btn btn-gold" href="#oiseaux">
@@ -382,12 +369,11 @@
     </div>
   </section>
 
-
   <section id="oiseaux">
 
     <div class="section-title">
       <h2>Nos Canaris</h2>
-      <p>Choisissez votre type de canari</p>
+      <p>Recherchez votre type de canari</p>
     </div>
 
     <div class="search-box">
@@ -395,23 +381,16 @@
         type="text"
         id="search"
         placeholder="🔎 Rechercher un canari..."
-        onkeyup="searchBirds()"
-      >
+        onkeyup="searchBirds()">
     </div>
 
     <div class="products" id="products">
 
       <article class="card">
         <div class="bird-image">🐦</div>
-
         <div class="card-content">
           <h3>Agate Mosaïque Rouge</h3>
-
-          <p>
-            Canari Agate Mosaïque Rouge.
-            Disponibilité et détails sur demande.
-          </p>
-
+          <p>Canari Agate Mosaïque Rouge. Disponibilité sur demande.</p>
           <div class="price">Prix : Sur demande</div>
 
           <a
@@ -423,18 +402,11 @@
         </div>
       </article>
 
-
       <article class="card">
         <div class="bird-image">🐦</div>
-
         <div class="card-content">
           <h3>Mosaïque Rouge</h3>
-
-          <p>
-            Canari Mosaïque Rouge.
-            Contactez-nous pour connaître la disponibilité.
-          </p>
-
+          <p>Canari Mosaïque Rouge. Disponibilité sur demande.</p>
           <div class="price">Prix : Sur demande</div>
 
           <a
@@ -446,18 +418,11 @@
         </div>
       </article>
 
-
       <article class="card">
         <div class="bird-image">🐦</div>
-
         <div class="card-content">
           <h3>Arlequin</h3>
-
-          <p>
-            Canari Arlequin.
-            Disponibilité et informations sur demande.
-          </p>
-
+          <p>Canari Arlequin. Disponibilité sur demande.</p>
           <div class="price">Prix : Sur demande</div>
 
           <a
@@ -469,18 +434,11 @@
         </div>
       </article>
 
-
       <article class="card">
         <div class="bird-image">🐦</div>
-
         <div class="card-content">
           <h3>Casquée Blanc</h3>
-
-          <p>
-            Canari Casquée Blanc.
-            Contactez-nous pour les disponibilités.
-          </p>
-
+          <p>Canari Casquée Blanc. Disponibilité sur demande.</p>
           <div class="price">Prix : Sur demande</div>
 
           <a
@@ -495,7 +453,6 @@
     </div>
   </section>
 
-
   <section id="details">
 
     <div class="section-title">
@@ -507,29 +464,21 @@
 
       <div class="info-box">
         <h3>🐦 Sélection</h3>
-        <p>
-          Plusieurs types de canaris disponibles selon les arrivages.
-        </p>
+        <p>Plusieurs types de canaris selon les disponibilités.</p>
       </div>
 
       <div class="info-box">
         <h3>💬 Contact direct</h3>
-        <p>
-          Contactez-nous facilement sur WhatsApp pour les détails.
-        </p>
+        <p>Contactez-nous directement sur WhatsApp.</p>
       </div>
 
       <div class="info-box">
         <h3>🇹🇳 Tunisie</h3>
-        <p>
-          Service destiné aux passionnés et éleveurs en Tunisie.
-        </p>
+        <p>Service destiné aux passionnés et éleveurs en Tunisie.</p>
       </div>
 
     </div>
-
   </section>
-
 
   <section>
 
@@ -542,7 +491,7 @@
 
       <h2>Vous cherchez un canari précis ?</h2>
 
-      <p style="color:#aaa; margin:15px 0 25px;">
+      <p style="color:#aaa;margin:15px 0 25px;">
         Envoyez-nous un message avec le type de canari recherché.
       </p>
 
@@ -554,9 +503,7 @@
       </a>
 
     </div>
-
   </section>
-
 
   <section id="livraison">
 
@@ -570,25 +517,23 @@
       <div class="step">
         <div class="number">1</div>
         <h3>Choisissez</h3>
-        <p>Choisissez le type de canari qui vous intéresse.</p>
+        <p>Choisissez le type de canari.</p>
       </div>
 
       <div class="step">
         <div class="number">2</div>
         <h3>Contactez-nous</h3>
-        <p>Envoyez-nous un message sur WhatsApp.</p>
+        <p>Envoyez-nous votre demande sur WhatsApp.</p>
       </div>
 
       <div class="step">
         <div class="number">3</div>
         <h3>Confirmation</h3>
-        <p>Nous vous indiquons la disponibilité et les modalités.</p>
+        <p>Nous confirmons disponibilité et modalités.</p>
       </div>
 
     </div>
-
   </section>
-
 
   <section id="faq">
 
@@ -600,40 +545,26 @@
 
       <details>
         <summary>Quels types de canaris proposez-vous ?</summary>
-        <p>
-          Agate Mosaïque Rouge, Mosaïque Rouge, Arlequin et Casquée Blanc,
-          selon disponibilité.
-        </p>
+        <p>Agate Mosaïque Rouge, Mosaïque Rouge, Arlequin et Casquée Blanc, selon disponibilité.</p>
       </details>
 
       <details>
         <summary>Comment connaître le prix ?</summary>
-        <p>
-          Contactez-nous directement sur WhatsApp pour connaître le prix
-          et la disponibilité actuelle.
-        </p>
+        <p>Contactez-nous sur WhatsApp pour connaître le prix actuel.</p>
       </details>
 
       <details>
         <summary>Comment commander ?</summary>
-        <p>
-          Cliquez sur le bouton Commander et envoyez-nous votre demande
-          sur WhatsApp.
-        </p>
+        <p>Cliquez sur Commander et envoyez votre demande sur WhatsApp.</p>
       </details>
 
       <details>
         <summary>La livraison est-elle disponible ?</summary>
-        <p>
-          Les modalités de livraison sont à confirmer directement avec nous
-          selon votre ville.
-        </p>
+        <p>Les modalités sont à confirmer selon votre ville.</p>
       </details>
 
     </div>
-
   </section>
-
 
   <section id="contact">
 
@@ -641,7 +572,7 @@
 
       <h2>Contactez CanariTunisie 🐦</h2>
 
-      <p style="color:#aaa; margin:15px 0 25px;">
+      <p style="color:#aaa;margin:15px 0 25px;">
         WhatsApp : +216 29 702 469
       </p>
 
@@ -653,16 +584,13 @@
       </a>
 
     </div>
-
   </section>
 
 </main>
 
-
 <footer>
   <p>© 2026 CanariTunisie — Vente de canaris en Tunisie 🐦</p>
 </footer>
-
 
 <a
   class="whatsapp"
@@ -672,29 +600,16 @@
   💬
 </a>
 
-
 <script>
-  function searchBirds() {
+function searchBirds() {
+  const input = document.getElementById("search").value.toLowerCase();
+  const cards = document.querySelectorAll(".card");
 
-    const input = document
-      .getElementById("search")
-      .value
-      .toLowerCase();
-
-    const cards = document.querySelectorAll(".card");
-
-    cards.forEach(function(card) {
-
-      const text = card.innerText.toLowerCase();
-
-      if (text.includes(input)) {
-        card.style.display = "";
-      } else {
-        card.style.display = "none";
-      }
-
-    });
-  }
+  cards.forEach(card => {
+    const text = card.innerText.toLowerCase();
+    card.style.display = text.includes(input) ? "" : "none";
+  });
+}
 </script>
 
 </body>
