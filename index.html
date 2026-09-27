@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta name="google-site-verification" content="f0VuirQCHjvUL5hWg8VhXKESlUgmYS6sWIoH8LzNPBg" />
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>CanariTunisie 🐦 | Vente de Canaris en Tunisie</title>
+  <title>CanariTunisie 🐦 | Canaris de race en Tunisie</title>
 
-  <meta name="description" content="CanariTunisie - Vente de canaris en Tunisie : Agate Mosaïque Rouge, Mosaïque Rouge, Arlequin et Casquée Blanc.">
-  <meta name="keywords" content="canari Tunisie, canaris Tunisie, vente canari Tunisie, Agate Mosaïque Rouge, Mosaïque Rouge, Arlequin, Casquée Blanc">
+  <meta name="description" content="CanariTunisie - Vente de canaris de race en Tunisie : Agate Mosaïque Rouge, Mosaïque Rouge, Arlequin et Casquée Blanc. Contact et commande par WhatsApp.">
+
+  <meta name="keywords" content="canaris Tunisie, canari de race Tunisie, vente canaris Tunisie, Agate Mosaïque Rouge, Mosaïque Rouge, Arlequin, Casquée Blanc">
+
   <meta name="robots" content="index, follow">
+
   <meta name="theme-color" content="#0b0b0b">
 
+  <meta name="google-site-verification" content="f0VuirQCHjvUL5hWg8VhXKESlUgmYS6sWIoH8LzNPBg" />
+
   <link rel="canonical" href="https://aihubbb.github.io/CanariTunisie/">
-  <link rel="icon" href="favicon.svg">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
   <style>
     * {
@@ -24,104 +30,137 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
-      background: #080a09;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0b0b;
       color: #f5f5f5;
       line-height: 1.6;
     }
 
-    header {
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    /* NAVBAR */
+    nav {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(8,10,9,.96);
-      border-bottom: 1px solid #292d29;
+      background: rgba(11, 11, 11, 0.96);
+      border-bottom: 1px solid #292929;
       backdrop-filter: blur(10px);
     }
 
-    nav {
-      max-width: 1200px;
-      margin: auto;
-      padding: 18px 20px;
+    .nav-content {
+      min-height: 70px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       gap: 20px;
     }
 
     .logo {
-      font-size: 23px;
-      font-weight: bold;
-      color: #d9b85a;
-      text-decoration: none;
+      font-size: 22px;
+      font-weight: 800;
+      color: #d9b45a;
     }
 
-    nav a {
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      list-style: none;
+    }
+
+    .nav-links a {
       color: #ddd;
-      text-decoration: none;
-      margin-left: 18px;
-      font-size: 14px;
+      transition: 0.3s;
     }
 
-    nav a:hover {
-      color: #d9b85a;
+    .nav-links a:hover {
+      color: #d9b45a;
     }
 
+    /* HERO */
     .hero {
-      min-height: 78vh;
+      min-height: 570px;
       display: flex;
       align-items: center;
-      justify-content: center;
       text-align: center;
-      padding: 80px 20px;
       background:
-        radial-gradient(circle at top, #354133 0%, #0b0d0c 45%, #080a09 100%);
+        radial-gradient(circle at top, #253126 0%, #0b0b0b 55%);
     }
 
     .hero-content {
       max-width: 850px;
+      margin: auto;
+    }
+
+    .hero-bird {
+      font-size: 70px;
+      margin-bottom: 15px;
     }
 
     .hero h1 {
-      font-size: clamp(42px, 7vw, 78px);
-      line-height: 1.05;
+      font-size: clamp(35px, 6vw, 65px);
+      line-height: 1.1;
       margin-bottom: 20px;
     }
 
     .hero h1 span {
-      color: #d9b85a;
+      color: #d9b45a;
     }
 
     .hero p {
-      color: #c1c5bf;
-      font-size: 18px;
-      max-width: 650px;
+      color: #c9c9c9;
+      max-width: 700px;
       margin: 0 auto 30px;
+      font-size: 18px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
     .btn {
       display: inline-block;
-      padding: 14px 25px;
+      padding: 13px 23px;
       border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: .2s;
+      font-weight: 700;
+      transition: 0.3s;
     }
 
-    .btn-gold {
-      background: #d9b85a;
+    .btn-primary {
+      background: #d9b45a;
       color: #111;
     }
 
-    .btn-gold:hover {
+    .btn-primary:hover {
       transform: translateY(-2px);
-      background: #efd06d;
+      background: #edca78;
     }
 
+    .btn-secondary {
+      border: 1px solid #555;
+      color: #fff;
+    }
+
+    .btn-secondary:hover {
+      border-color: #d9b45a;
+      color: #d9b45a;
+    }
+
+    /* SECTION */
     section {
-      max-width: 1200px;
-      margin: auto;
-      padding: 70px 20px;
+      padding: 75px 0;
     }
 
     .section-title {
@@ -130,186 +169,241 @@
     }
 
     .section-title h2 {
-      font-size: 34px;
+      font-size: 35px;
       margin-bottom: 10px;
     }
 
     .section-title p {
-      color: #999;
+      color: #aaa;
     }
 
+    /* SEARCH */
     .search-box {
       max-width: 650px;
-      margin: 0 auto 45px;
+      margin: 0 auto 35px;
     }
 
     .search-box input {
       width: 100%;
-      padding: 17px 20px;
+      padding: 16px 18px;
       border-radius: 12px;
-      border: 1px solid #343934;
-      background: #111411;
+      border: 1px solid #3b3b3b;
+      background: #151515;
       color: white;
       font-size: 16px;
       outline: none;
     }
 
     .search-box input:focus {
-      border-color: #d9b85a;
+      border-color: #d9b45a;
     }
 
+    /* PRODUCTS */
     .products {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
     }
 
-    .card {
-      background: #111411;
-      border: 1px solid #292d29;
+    .product-card {
+      background: #141414;
+      border: 1px solid #292929;
       border-radius: 18px;
       overflow: hidden;
-      transition: .25s;
+      transition: 0.3s;
     }
 
-    .card:hover {
-      transform: translateY(-6px);
-      border-color: #d9b85a;
+    .product-card:hover {
+      transform: translateY(-5px);
+      border-color: #d9b45a;
     }
 
-    .bird-image {
-      height: 220px;
+    .product-image {
+      height: 210px;
       display: flex;
-      justify-content: center;
       align-items: center;
-      font-size: 80px;
-      background: radial-gradient(circle, #3c4939 0%, #141914 70%);
+      justify-content: center;
+      background:
+        linear-gradient(135deg, #20291f, #101010);
+      font-size: 75px;
     }
 
-    .card-content {
-      padding: 22px;
+    .product-info {
+      padding: 20px;
     }
 
-    .card h3 {
+    .product-info h3 {
+      font-size: 21px;
       margin-bottom: 10px;
     }
 
-    .card p {
-      color: #aeb3ad;
+    .product-info p {
+      color: #aaa;
       font-size: 14px;
       margin-bottom: 15px;
     }
 
     .price {
-      color: #d9b85a;
-      font-weight: bold;
-      margin-bottom: 18px;
+      color: #d9b45a;
+      font-weight: 800;
+      margin-bottom: 15px;
     }
 
-    .card .btn {
-      width: 100%;
+    .whatsapp-btn {
+      display: block;
       text-align: center;
+      background: #1fa855;
+      padding: 11px;
+      border-radius: 9px;
+      font-weight: bold;
+      color: white;
     }
 
-    .info-grid,
+    .whatsapp-btn:hover {
+      background: #25c965;
+    }
+
+    /* INFO */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .info-card {
+      background: #141414;
+      border: 1px solid #292929;
+      border-radius: 16px;
+      padding: 25px;
+    }
+
+    .info-card .icon {
+      font-size: 35px;
+      margin-bottom: 12px;
+    }
+
+    .info-card h3 {
+      margin-bottom: 10px;
+      color: #d9b45a;
+    }
+
+    .info-card p {
+      color: #aaa;
+    }
+
+    /* STEPS */
     .steps {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
 
-    .info-box,
     .step {
-      background: #111411;
-      border: 1px solid #292d29;
+      background: #141414;
+      border: 1px solid #292929;
       border-radius: 16px;
-      padding: 28px;
-    }
-
-    .info-box h3 {
-      color: #d9b85a;
-      margin-bottom: 12px;
-    }
-
-    .info-box p,
-    .step p {
-      color: #b4b8b3;
-    }
-
-    .step {
+      padding: 25px;
       text-align: center;
     }
 
-    .number {
+    .step-number {
       width: 45px;
       height: 45px;
       border-radius: 50%;
-      background: #d9b85a;
+      background: #d9b45a;
       color: #111;
       display: flex;
       align-items: center;
       justify-content: center;
       margin: 0 auto 15px;
-      font-weight: bold;
+      font-weight: 900;
     }
 
+    .step h3 {
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      color: #aaa;
+    }
+
+    /* FAQ */
     .faq {
-      max-width: 850px;
+      max-width: 800px;
       margin: auto;
     }
 
     details {
-      background: #111411;
-      border: 1px solid #292d29;
+      background: #141414;
+      border: 1px solid #292929;
       border-radius: 12px;
       margin-bottom: 12px;
-      padding: 18px 20px;
+      padding: 18px;
     }
 
     summary {
       cursor: pointer;
-      font-weight: bold;
+      font-weight: 700;
     }
 
     details p {
       color: #aaa;
-      margin-top: 12px;
+      padding-top: 12px;
     }
 
-    .contact {
+    /* CONTACT */
+    .contact-box {
       text-align: center;
-      background: #111411;
-      border: 1px solid #292d29;
-      border-radius: 20px;
-      padding: 55px 20px;
+      background:
+        radial-gradient(circle at center, #243025, #121212);
+      border: 1px solid #333;
+      border-radius: 22px;
+      padding: 50px 25px;
     }
 
+    .contact-box h2 {
+      font-size: 35px;
+      margin-bottom: 12px;
+    }
+
+    .contact-box p {
+      color: #aaa;
+      margin-bottom: 25px;
+    }
+
+    .phone {
+      color: #d9b45a;
+      font-size: 25px;
+      font-weight: 800;
+      margin-bottom: 25px;
+    }
+
+    /* FOOTER */
     footer {
-      border-top: 1px solid #292d29;
+      border-top: 1px solid #292929;
+      padding: 30px 0;
       text-align: center;
-      padding: 30px 20px;
-      color: #777;
-      margin-top: 30px;
+      color: #888;
     }
 
-    .whatsapp {
+    /* FLOATING WHATSAPP */
+    .floating-whatsapp {
       position: fixed;
       right: 20px;
       bottom: 20px;
-      width: 60px;
-      height: 60px;
+      width: 58px;
+      height: 58px;
       border-radius: 50%;
-      background: #25D366;
-      color: white;
+      background: #1fa855;
       display: flex;
       align-items: center;
       justify-content: center;
-      text-decoration: none;
-      font-size: 28px;
-      z-index: 2000;
-      box-shadow: 0 5px 20px rgba(0,0,0,.4);
+      font-size: 29px;
+      z-index: 999;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
     }
 
+    /* MOBILE */
     @media (max-width: 900px) {
       .products {
         grid-template-columns: repeat(2, 1fr);
@@ -321,17 +415,29 @@
       }
     }
 
-    @media (max-width: 600px) {
-      nav {
+    @media (max-width: 650px) {
+      .nav-content {
         flex-direction: column;
+        padding: 15px 0;
       }
 
-      nav a {
-        margin: 0 7px;
+      .nav-links {
+        gap: 12px;
+        font-size: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
       .products {
         grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 500px;
+      }
+
+      section {
+        padding: 55px 0;
       }
     }
   </style>
@@ -339,279 +445,434 @@
 
 <body>
 
-<header>
+  <!-- NAVBAR -->
   <nav>
-    <a href="#" class="logo">🐦 CanariTunisie</a>
+    <div class="container nav-content">
 
-    <div>
-      <a href="#oiseaux">Oiseaux</a>
-      <a href="#details">Détails</a>
-      <a href="#livraison">Livraison</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Contact</a>
+      <a href="#" class="logo">🐦 CanariTunisie</a>
+
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#canaris">Canaris</a></li>
+        <li><a href="#livraison">Livraison</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
     </div>
   </nav>
-</header>
 
-<main>
+  <!-- HERO -->
+  <header class="hero" id="accueil">
+    <div class="container hero-content">
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Canaris <span>de qualité</span> en Tunisie 🐦</h1>
+      <div class="hero-bird">🐦</div>
+
+      <h1>
+        Canaris <span>de race</span> en Tunisie 🐦
+      </h1>
 
       <p>
-        Découvrez notre sélection de canaris en Tunisie.
-        Contactez-nous directement pour les disponibilités et les prix.
+        Découvrez nos canaris et contactez-nous directement pour connaître
+        les disponibilités, les prix et les informations sur chaque oiseau.
       </p>
 
-      <a class="btn btn-gold" href="#oiseaux">
-        Voir les oiseaux
-      </a>
-    </div>
-  </section>
+      <div class="buttons">
+        <a href="#canaris" class="btn btn-primary">
+          Voir les canaris
+        </a>
 
-  <section id="oiseaux">
-
-    <div class="section-title">
-      <h2>Nos Canaris</h2>
-      <p>Recherchez votre type de canari</p>
-    </div>
-
-    <div class="search-box">
-      <input
-        type="text"
-        id="search"
-        placeholder="🔎 Rechercher un canari..."
-        onkeyup="searchBirds()">
-    </div>
-
-    <div class="products" id="products">
-
-      <article class="card">
-        <div class="bird-image">🐦</div>
-        <div class="card-content">
-          <h3>Agate Mosaïque Rouge</h3>
-          <p>Canari Agate Mosaïque Rouge. Disponibilité sur demande.</p>
-          <div class="price">Prix : Sur demande</div>
-
-          <a
-            class="btn btn-gold"
-            href="https://wa.me/21629702469?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20un%20Agate%20Mosa%C3%AFque%20Rouge."
-            target="_blank">
-            Commander
-          </a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="bird-image">🐦</div>
-        <div class="card-content">
-          <h3>Mosaïque Rouge</h3>
-          <p>Canari Mosaïque Rouge. Disponibilité sur demande.</p>
-          <div class="price">Prix : Sur demande</div>
-
-          <a
-            class="btn btn-gold"
-            href="https://wa.me/21629702469?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20un%20Mosa%C3%AFque%20Rouge."
-            target="_blank">
-            Commander
-          </a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="bird-image">🐦</div>
-        <div class="card-content">
-          <h3>Arlequin</h3>
-          <p>Canari Arlequin. Disponibilité sur demande.</p>
-          <div class="price">Prix : Sur demande</div>
-
-          <a
-            class="btn btn-gold"
-            href="https://wa.me/21629702469?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20un%20canari%20Arlequin."
-            target="_blank">
-            Commander
-          </a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="bird-image">🐦</div>
-        <div class="card-content">
-          <h3>Casquée Blanc</h3>
-          <p>Canari Casquée Blanc. Disponibilité sur demande.</p>
-          <div class="price">Prix : Sur demande</div>
-
-          <a
-            class="btn btn-gold"
-            href="https://wa.me/21629702469?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20un%20Casqu%C3%A9e%20Blanc."
-            target="_blank">
-            Commander
-          </a>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <section id="details">
-
-    <div class="section-title">
-      <h2>Pourquoi CanariTunisie ?</h2>
-      <p>Un service simple et direct</p>
-    </div>
-
-    <div class="info-grid">
-
-      <div class="info-box">
-        <h3>🐦 Sélection</h3>
-        <p>Plusieurs types de canaris selon les disponibilités.</p>
-      </div>
-
-      <div class="info-box">
-        <h3>💬 Contact direct</h3>
-        <p>Contactez-nous directement sur WhatsApp.</p>
-      </div>
-
-      <div class="info-box">
-        <h3>🇹🇳 Tunisie</h3>
-        <p>Service destiné aux passionnés et éleveurs en Tunisie.</p>
+        <a
+          href="https://wa.me/21629702469"
+          target="_blank"
+          class="btn btn-secondary"
+        >
+          💬 WhatsApp
+        </a>
       </div>
 
     </div>
+  </header>
+
+  <!-- PRODUCTS -->
+  <section id="canaris">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Nos canaris</h2>
+        <p>Découvrez nos différentes races et variétés.</p>
+      </div>
+
+      <!-- SEARCH -->
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="🔎 Rechercher un canari..."
+        >
+      </div>
+
+      <div class="products" id="productList">
+
+        <!-- PRODUCT 1 -->
+        <article class="product-card" data-name="agate mosaique rouge">
+          <div class="product-image">🐦</div>
+
+          <div class="product-info">
+            <h3>Agate Mosaïque Rouge</h3>
+
+            <p>
+              Canari de race avec une belle coloration mosaïque rouge.
+            </p>
+
+            <div class="price">
+              Prix : Sur demande
+            </div>
+
+            <a
+              href="https://wa.me/21629702469?text=Bonjour%2C%20je%20suis%20intéressé%20par%20un%20Agate%20Mosaïque%20Rouge."
+              target="_blank"
+              class="whatsapp-btn"
+            >
+              💬 Demander sur WhatsApp
+            </a>
+          </div>
+        </article>
+
+        <!-- PRODUCT 2 -->
+        <article class="product-card" data-name="mosaique rouge">
+          <div class="product-image">🐦</div>
+
+          <div class="product-info">
+            <h3>Mosaïque Rouge</h3>
+
+            <p>
+              Une variété recherchée avec une belle présence de rouge.
+            </p>
+
+            <div class="price">
+              Prix : Sur demande
+            </div>
+
+            <a
+              href="https://wa.me/21629702469?text=Bonjour%2C%20je%20suis%20intéressé%20par%20un%20Mosaïque%20Rouge."
+              target="_blank"
+              class="whatsapp-btn"
+            >
+              💬 Demander sur WhatsApp
+            </a>
+          </div>
+        </article>
+
+        <!-- PRODUCT 3 -->
+        <article class="product-card" data-name="arlequin">
+          <div class="product-image">🐦</div>
+
+          <div class="product-info">
+            <h3>Arlequin</h3>
+
+            <p>
+              Canari avec une apparence particulière et un plumage original.
+            </p>
+
+            <div class="price">
+              Prix : Sur demande
+            </div>
+
+            <a
+              href="https://wa.me/21629702469?text=Bonjour%2C%20je%20suis%20intéressé%20par%20un%20Arlequin."
+              target="_blank"
+              class="whatsapp-btn"
+            >
+              💬 Demander sur WhatsApp
+            </a>
+          </div>
+        </article>
+
+        <!-- PRODUCT 4 -->
+        <article class="product-card" data-name="casquee blanc">
+          <div class="product-image">🐦</div>
+
+          <div class="product-info">
+            <h3>Casquée Blanc</h3>
+
+            <p>
+              Une variété élégante avec un plumage clair.
+            </p>
+
+            <div class="price">
+              Prix : Sur demande
+            </div>
+
+            <a
+              href="https://wa.me/21629702469?text=Bonjour%2C%20je%20suis%20intéressé%20par%20un%20Casquée%20Blanc."
+              target="_blank"
+              class="whatsapp-btn"
+            >
+              💬 Demander sur WhatsApp
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <p
+        id="noResults"
+        style="display:none;text-align:center;color:#aaa;margin-top:30px;"
+      >
+        Aucun canari trouvé.
+      </p>
+
+    </div>
   </section>
 
+  <!-- DETAILS -->
   <section>
+    <div class="container">
 
-    <div class="section-title">
-      <h2>Prix</h2>
-      <p>Les prix dépendent de l'oiseau et de sa disponibilité.</p>
-    </div>
+      <div class="section-title">
+        <h2>Pourquoi CanariTunisie ?</h2>
+        <p>Des informations simples avant votre achat.</p>
+      </div>
 
-    <div class="contact">
+      <div class="info-grid">
 
-      <h2>Vous cherchez un canari précis ?</h2>
+        <div class="info-card">
+          <div class="icon">🐦</div>
+          <h3>Canaris de race</h3>
+          <p>
+            Découvrez différentes variétés de canaris disponibles en Tunisie.
+          </p>
+        </div>
 
-      <p style="color:#aaa;margin:15px 0 25px;">
-        Envoyez-nous un message avec le type de canari recherché.
-      </p>
+        <div class="info-card">
+          <div class="icon">💬</div>
+          <h3>Contact direct</h3>
+          <p>
+            Contactez-nous directement par WhatsApp pour les disponibilités
+            et les prix.
+          </p>
+        </div>
 
-      <a
-        class="btn btn-gold"
-        href="https://wa.me/21629702469?text=Bonjour%2C%20je%20cherche%20un%20canari."
-        target="_blank">
-        Demander le prix
-      </a>
+        <div class="info-card">
+          <div class="icon">📦</div>
+          <h3>Livraison</h3>
+          <p>
+            Les modalités de livraison sont communiquées selon votre région
+            et votre commande.
+          </p>
+        </div>
+
+      </div>
 
     </div>
   </section>
 
+  <!-- PRICE -->
+  <section>
+    <div class="container">
+
+      <div class="contact-box">
+
+        <h2>Prix & Disponibilité</h2>
+
+        <p>
+          Les prix peuvent varier selon la race, la disponibilité et
+          les caractéristiques du canari.
+        </p>
+
+        <div class="phone">
+          📱 29 702 469
+        </div>
+
+        <a
+          href="https://wa.me/21629702469"
+          target="_blank"
+          class="btn btn-primary"
+        >
+          💬 Demander le prix sur WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DELIVERY -->
   <section id="livraison">
+    <div class="container">
 
-    <div class="section-title">
-      <h2>Comment commander ?</h2>
-      <p>3 étapes simples</p>
-    </div>
-
-    <div class="steps">
-
-      <div class="step">
-        <div class="number">1</div>
-        <h3>Choisissez</h3>
-        <p>Choisissez le type de canari.</p>
+      <div class="section-title">
+        <h2>Comment commander ?</h2>
+        <p>Une commande simple en quelques étapes.</p>
       </div>
 
-      <div class="step">
-        <div class="number">2</div>
-        <h3>Contactez-nous</h3>
-        <p>Envoyez-nous votre demande sur WhatsApp.</p>
-      </div>
+      <div class="steps">
 
-      <div class="step">
-        <div class="number">3</div>
-        <h3>Confirmation</h3>
-        <p>Nous confirmons disponibilité et modalités.</p>
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Choisissez</h3>
+          <p>
+            Choisissez la variété de canari qui vous intéresse.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Contactez-nous</h3>
+          <p>
+            Envoyez-nous un message sur WhatsApp.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Confirmation</h3>
+          <p>
+            Nous vous communiquons la disponibilité, le prix et
+            les modalités de livraison.
+          </p>
+        </div>
+
       </div>
 
     </div>
   </section>
 
+  <!-- FAQ -->
   <section id="faq">
+    <div class="container">
 
-    <div class="section-title">
-      <h2>FAQ</h2>
-    </div>
+      <div class="section-title">
+        <h2>Questions fréquentes</h2>
+        <p>Les réponses aux questions les plus courantes.</p>
+      </div>
 
-    <div class="faq">
+      <div class="faq">
 
-      <details>
-        <summary>Quels types de canaris proposez-vous ?</summary>
-        <p>Agate Mosaïque Rouge, Mosaïque Rouge, Arlequin et Casquée Blanc, selon disponibilité.</p>
-      </details>
+        <details>
+          <summary>Quels types de canaris proposez-vous ?</summary>
+          <p>
+            Nous présentons notamment Agate Mosaïque Rouge, Mosaïque Rouge,
+            Arlequin et Casquée Blanc.
+          </p>
+        </details>
 
-      <details>
-        <summary>Comment connaître le prix ?</summary>
-        <p>Contactez-nous sur WhatsApp pour connaître le prix actuel.</p>
-      </details>
+        <details>
+          <summary>Comment connaître le prix ?</summary>
+          <p>
+            Contactez-nous sur WhatsApp pour connaître le prix et la
+            disponibilité actuelle.
+          </p>
+        </details>
 
-      <details>
-        <summary>Comment commander ?</summary>
-        <p>Cliquez sur Commander et envoyez votre demande sur WhatsApp.</p>
-      </details>
+        <details>
+          <summary>Comment commander ?</summary>
+          <p>
+            Envoyez-nous un message WhatsApp avec le type de canari
+            qui vous intéresse.
+          </p>
+        </details>
 
-      <details>
-        <summary>La livraison est-elle disponible ?</summary>
-        <p>Les modalités sont à confirmer selon votre ville.</p>
-      </details>
+        <details>
+          <summary>La livraison est-elle disponible ?</summary>
+          <p>
+            Les modalités de livraison dépendent de la région.
+            Contactez-nous pour plus d'informations.
+          </p>
+        </details>
+
+      </div>
 
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact">
+    <div class="container">
 
-    <div class="contact">
+      <div class="contact-box">
 
-      <h2>Contactez CanariTunisie 🐦</h2>
+        <h2>Contactez-nous 🐦</h2>
 
-      <p style="color:#aaa;margin:15px 0 25px;">
-        WhatsApp : +216 29 702 469
+        <p>
+          Une question sur une race, un prix ou une disponibilité ?
+          Écrivez-nous directement.
+        </p>
+
+        <div class="phone">
+          29 702 469
+        </div>
+
+        <a
+          href="https://wa.me/21629702469"
+          target="_blank"
+          class="btn btn-primary"
+        >
+          💬 Ouvrir WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+
+      <p>
+        © 2026 CanariTunisie 🐦 — Canaris de race en Tunisie
       </p>
 
-      <a
-        class="btn btn-gold"
-        href="https://wa.me/21629702469"
-        target="_blank">
-        WhatsApp
-      </a>
-
     </div>
-  </section>
+  </footer>
 
-</main>
+  <!-- FLOATING WHATSAPP -->
+  <a
+    href="https://wa.me/21629702469"
+    target="_blank"
+    class="floating-whatsapp"
+    aria-label="Contacter CanariTunisie sur WhatsApp"
+  >
+    💬
+  </a>
 
-<footer>
-  <p>© 2026 CanariTunisie — Vente de canaris en Tunisie 🐦</p>
-</footer>
+  <!-- SEARCH SCRIPT -->
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const products = document.querySelectorAll(".product-card");
+    const noResults = document.getElementById("noResults");
 
-<a
-  class="whatsapp"
-  href="https://wa.me/21629702469"
-  target="_blank"
-  aria-label="WhatsApp">
-  💬
-</a>
+    searchInput.addEventListener("input", function () {
 
-<script>
-function searchBirds() {
-  const input = document.getElementById("search").value.toLowerCase();
-  const cards = document.querySelectorAll(".card");
+      const search = this.value
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
 
-  cards.forEach(card => {
-    const text = card.innerText.toLowerCase();
-    card.style.display = text.includes(input) ? "" : "none";
-  });
-}
-</script>
+      let found = 0;
+
+      products.forEach(function(product) {
+
+        const name = product
+          .getAttribute("data-name")
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "");
+
+        if (name.includes(search)) {
+          product.style.display = "";
+          found++;
+        } else {
+          product.style.display = "none";
+        }
+
+      });
+
+      noResults.style.display = found === 0 ? "block" : "none";
+    });
+  </script>
 
 </body>
 </html>
