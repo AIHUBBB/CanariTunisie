@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://TON-SITE-ICI.com/sitemap.xml
+Sitemap: https://aihubbb.github.io/CanariTunisie/sitemap.xml
